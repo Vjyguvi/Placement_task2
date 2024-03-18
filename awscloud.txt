@@ -1,4 +1,3 @@
-122
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Create a VPC with an EC2 instance, Internet Gateway, Security Group, and a new Key Pair
 
