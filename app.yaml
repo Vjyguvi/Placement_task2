@@ -1,0 +1,13 @@
+- name: Install App
+  hosts: all
+  become: yes  
+  tasks:
+    - name: Install Apache2
+      apt:
+        name: apache2
+        state: present
+
+    - name: Copy index.html file
+      template:
+        src: /home/ubuntu/templates/index.html
+        dest: /var/www/html/index.html
